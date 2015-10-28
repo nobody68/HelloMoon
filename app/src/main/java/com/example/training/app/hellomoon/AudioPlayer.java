@@ -34,4 +34,14 @@ public class AudioPlayer {
         mMediaPlayer.setLooping(false);
         mMediaPlayer.start();
     }
+    public void pause(){
+        if(mMediaPlayer != null){
+            mMediaPlayer.pause();
+        }
+    }
+    public void resume(){
+        if(mMediaPlayer != null){
+            mMediaPlayer.start();
+        }
+    }
 }

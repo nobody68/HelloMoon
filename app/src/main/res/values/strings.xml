@@ -3,5 +3,8 @@
 
     <string name="hello_moon_play">Play</string>
     <string name="hello_moon_stop">Stop</string>
+    <String name="hello_moon_pause">Pause</String>
+    <String name="hello_moon_resume">Resume</String>
     <string name="hello_moon_description">Neil Armstrong stepping onto the moon</string>
+    <string name="helloMoonPause">pause</string>
 </resources>

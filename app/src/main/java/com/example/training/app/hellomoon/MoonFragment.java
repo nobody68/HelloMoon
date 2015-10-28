@@ -11,6 +11,7 @@ public class MoonFragment extends Fragment {
     private AudioPlayer mPlayer;
     private Button mPlayButton;
     private Button mStopButton;
+    private Button mPauseButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,12 @@ public class MoonFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 mPlayer.stop();
+            }
+        });
+        mPauseButton = (Button) view.findViewById(R.id.hello_moon_pause_button);
+        mPauseButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                mPlayer.pause();
             }
         });
         return view;
